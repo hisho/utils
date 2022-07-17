@@ -1,0 +1,43 @@
+{
+  "name": "@hisho/utils",
+  "version": "0.0.1",
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "format": "prettier --check . --write",
+    "typecheck": "tsc --noEmit",
+    "postbuild": "npm run typecheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisho/utils.git"
+  },
+  "keywords": [],
+  "author": "hisho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisho/utils/issues"
+  },
+  "homepage": "https://github.com/hisho/utils#readme",
+  "volta": {
+    "node": "16.16.0",
+    "yarn": "1.22.19"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^1.0.1",
+    "@types/prettier": "^2.6.3",
+    "@types/rimraf": "^3.0.2",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}
