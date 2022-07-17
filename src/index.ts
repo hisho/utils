@@ -1,1 +1,1 @@
-console.log('init')
+export { valueAsNumber } from './valueAsNumber/valueAsNumber'
