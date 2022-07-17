@@ -6,10 +6,10 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "outDir": "dist",
-    "target": "es5"
+    "target": "esnext"
   },
   "include": ["src/index.ts"]
 }
