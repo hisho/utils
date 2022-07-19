@@ -32,6 +32,9 @@ export function valueAsDate(
   }
   //timestampも対象にする場合はnumberもいれる
   if (typeof value === 'string') {
+    if (!isNaN(Number(value))) {
+      return defaultValue
+    }
     const date = new Date(value)
     if (isInvalidDate(date)) {
       return defaultValue
