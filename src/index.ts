@@ -1,4 +1,4 @@
-export { valueAsNumber } from './valueAsNumber/valueAsNumber'
-export { valueAsDate } from './valueAsDate/valueAsDate'
-export { valueAsString } from './valueAsString/valueAsString'
-export { valueAsBoolean } from './valueAsBoolean/valueAsBoolean'
+export * from './valueAsNumber/valueAsNumber.js'
+export * from './valueAsDate/valueAsDate.js'
+export * from './valueAsString/valueAsString.js'
+export * from './valueAsBoolean/valueAsBoolean.js'
